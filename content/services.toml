@@ -1,9 +1,21 @@
 type = "card"
 title = "Services"
-description = "Professional services and community involvement."
+description = "Research, survey, and community-facing service work."
 
 [[items]]
-title = "Reviewer"
-subtitle = "Journal Name"
+title = "Survey Development Assistant"
+subtitle = "Enterprise Survey for Innovation and Entrepreneurship in China"
+date = "2025"
+content = "Coordinated questionnaire design, review, and digitalization; supported field deployment and troubleshooting during large-scale data collection."
+
+[[items]]
+title = "Investigator"
+subtitle = "Academy of Social Governance, Zhejiang University"
 date = "2024"
-content = "Reviewed papers for..."
+content = "Contributed to county-level social governance desk research, indicator data collection, and statistical analysis; participated in dissemination activities."
+
+[[items]]
+title = "Interviewer"
+subtitle = "Chinese Family Panel Studies (CFPS), Peking University"
+date = "2024"
+content = "Conducted household survey interviews in Hangzhou, supporting longitudinal social and economic research data collection."

@@ -141,8 +141,8 @@ function parseAuthors(authorsStr: string): Array<{ name: string; isHighlighted?:
       }
       
       // Check if this is Jiale Liu (to highlight)
-      const isHighlighted = name.toLowerCase().includes('jiale liu') || 
-                          name.toLowerCase().includes('liu jiale');
+      const isHighlighted = name.toLowerCase().includes('zhihong li') ||
+                          name.toLowerCase().includes('li zhihong');
       
       return {
         name: cleanBibTeXString(name),
