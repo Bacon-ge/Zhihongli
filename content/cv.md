@@ -1,5 +1,3 @@
-# Zhihong Li
-
 ## Education
 
 ### Zhejiang University
