@@ -308,7 +308,7 @@ export default function Profile({ author, social, features, researchInterests }:
                     <h3 className="font-semibold text-primary mb-3">Research Interests</h3>
                     <div className="space-y-2 text-sm text-neutral-700 dark:text-neutral-500">
                         {researchInterests.map((interest, index) => (
-                            <div key={index} className={interest === 'Mixed Methods' ? 'italic' : ''}>{interest}</div>
+                            <div key={index} className={interest === 'To be continued...' ? 'italic' : ''}>{interest}</div>
                         ))}
                     </div>
                 </div>
