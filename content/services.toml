@@ -1,21 +1,39 @@
 type = "card"
 title = "Services"
-description = "Research, survey, and community-facing service work."
+description = "I love talking with people and getting to know people with different experiences and perspectives."
+
+[[items]]
+title = "Volunteer"
+subtitle = "阿黄的神秘柜子 · ColorsWorld"
+date = "2025.9 - Present"
+content = "Offer regular queer-friendly peer support conversations for a nonprofit community organization."
+logo = "/logos/colorsworld-wechat.jpg"
+logo_alt = "ColorsWorld official account logo"
+logo_key = "colorsworld"
 
 [[items]]
 title = "Survey Development Assistant"
 subtitle = "Enterprise Survey for Innovation and Entrepreneurship in China"
 date = "2025"
 content = "Coordinated questionnaire design, review, and digitalization; supported field deployment and troubleshooting during large-scale data collection."
+logo = "/logos/peking-university.svg"
+logo_alt = "Peking University logo"
+logo_key = "pku"
 
 [[items]]
 title = "Investigator"
 subtitle = "Academy of Social Governance, Zhejiang University"
 date = "2024"
 content = "Contributed to county-level social governance desk research, indicator data collection, and statistical analysis; participated in dissemination activities."
+logo = "/logos/zhejiang-crest.png"
+logo_alt = "Zhejiang University logo"
+logo_key = "zhejiang"
 
 [[items]]
 title = "Interviewer"
 subtitle = "Chinese Family Panel Studies (CFPS), Peking University"
 date = "2024"
 content = "Conducted household survey interviews in Hangzhou, supporting longitudinal social and economic research data collection."
+logo = "/logos/peking-university.svg"
+logo_alt = "Peking University logo"
+logo_key = "pku"

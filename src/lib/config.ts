@@ -27,7 +27,6 @@ export interface SiteConfig {
         [key: string]: string | string[] | undefined;
     };
     features: {
-        enable_likes: boolean;
         enable_one_page_mode?: boolean;
     };
     navigation: Array<{

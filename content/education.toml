@@ -1,0 +1,26 @@
+[[education]]
+institution = "The University of Oxford"
+period = "2026 - 2027"
+degree = "M.A. in Sociology"
+details = "Incoming October 2026"
+logo = "/logos/oxford-crest.png"
+logo_alt = "University of Oxford logo"
+logo_key = "oxford"
+
+[[education]]
+institution = "Zhejiang University"
+period = "2022 - 2026"
+degree = "B.A. in Communication"
+details = "College of Media and International Culture"
+logo = "/logos/zhejiang-crest.png"
+logo_alt = "Zhejiang University logo"
+logo_key = "zhejiang"
+
+[[education]]
+institution = "The University of Chicago"
+period = "Summer 2024"
+degree = "Data and Policy Summer Scholar Program"
+details = "Quantitative policy analysis coursework using R"
+logo = "/logos/uchicago-logo.png"
+logo_alt = "University of Chicago logo"
+logo_key = "uchicago"

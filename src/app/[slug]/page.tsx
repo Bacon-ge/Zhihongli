@@ -5,11 +5,15 @@ import { parseBibTeX } from '@/lib/bibtexParser';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
+import PdfPage from '@/components/pages/PdfPage';
+import ResearchPage from '@/components/pages/ResearchPage';
 import {
     BasePageConfig,
     PublicationPageConfig,
     TextPageConfig,
-    CardPageConfig
+    CardPageConfig,
+    PdfPageConfig,
+    ResearchPageConfig
 } from '@/types/page';
 
 import { Metadata } from 'next';
@@ -46,15 +50,21 @@ export default async function DynamicPage({ params }: { params: Promise<{ slug: 
     }
 
     return (
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className={`${pageConfig.type === 'pdf' ? 'max-w-6xl' : 'max-w-4xl'} mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16`}>
             {pageConfig.type === 'publication' && (
                 <PublicationPage config={pageConfig as PublicationPageConfig} />
+            )}
+            {pageConfig.type === 'research' && (
+                <ResearchPage config={pageConfig as ResearchPageConfig} />
             )}
             {pageConfig.type === 'text' && (
                 <TextPageWrapper config={pageConfig as TextPageConfig} />
             )}
             {pageConfig.type === 'card' && (
                 <CardPage config={pageConfig as CardPageConfig} />
+            )}
+            {pageConfig.type === 'pdf' && (
+                <PdfPage config={pageConfig as PdfPageConfig} />
             )}
         </div>
     );

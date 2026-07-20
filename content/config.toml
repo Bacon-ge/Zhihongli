@@ -1,13 +1,13 @@
 [site]
 title = "Zhihong Li Academic Homepage"
-description = "Senior Student at Zhejiang University."
+description = "Incoming Master Student at the University of Oxford."
 favicon = "/favicon-bacon.svg"
-last_updated = "February 21, 2026"
+last_updated = "July 19, 2026"
 
 [author]
 name = "Zhihong Li"
-title = "Senior Student"
-institution = "Zhejiang University"
+title = "Incoming Master Student"
+institution = "The University of Oxford"
 avatar = "/bio.jpg"
 
 [social]
@@ -16,9 +16,6 @@ avatar = "/bio.jpg"
 email = "baconli@zju.edu.cn"
 
 [features]
-# Show a like button on the about page
-enable_likes = true
-
 # Display all subpages on a single page
 enable_one_page_mode = false
 
@@ -29,7 +26,7 @@ target = "about"
 href = "/"
 
 [[navigation]]
-title = "Publications"
+title = "Research"
 type = "page"
 target = "publications"
 href = "/publications/"

@@ -1,3 +1,5 @@
-type = "text"
+type = "pdf"
 title = "CV"
-source = "cv.md"
+description = "View the full curriculum vitae below or download a copy."
+source = "/cv/Zhihong-Li-CV.pdf"
+updated = "July 2026"

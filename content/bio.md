@@ -1,4 +1,4 @@
-Hi, I am Zhihong, a senior student in College of Media and International Culture, Zhejiang University.
+Hi, I am Zhihong, an incoming M.A. student in Sociology at the University of Oxford.
 
 My research begins with puzzles that arise from everyday life. I often find myself wondering why people express themselves on social media in ways that feel intensely emotional, loosely reasoned, or simply noisy: why conversations escalate, why certainty hardens so quickly, and why so much of it seems to move without clear logic.
 

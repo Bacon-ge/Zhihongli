@@ -3,33 +3,31 @@ import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } f
 import { parseBibTeX } from '@/lib/bibtexParser';
 import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
-import SelectedPublications from '@/components/home/SelectedPublications';
-import News, { NewsItem } from '@/components/home/News';
+import Education, { EducationItem } from '@/components/home/Education';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
+import PdfPage from '@/components/pages/PdfPage';
 
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, PdfPageConfig } from '@/types/page';
 
 // Define types for section config
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list';
+  type: 'markdown' | 'education';
   title?: string;
   source?: string;
-  filter?: string;
-  limit?: number;
   content?: string;
-  publications?: Publication[];
-  items?: NewsItem[];
+  education?: EducationItem[];
 }
 
 type PageData =
   | { type: 'about', id: string, sections: SectionConfig[] }
   | { type: 'publication', id: string, config: PublicationPageConfig, publications: Publication[] }
   | { type: 'text', id: string, config: TextPageConfig, content: string }
-  | { type: 'card', id: string, config: CardPageConfig };
+  | { type: 'card', id: string, config: CardPageConfig }
+  | { type: 'pdf', id: string, config: PdfPageConfig };
 
 export default function Home() {
   const config = getConfig();
@@ -48,22 +46,11 @@ export default function Home() {
             ...section,
             content: section.source ? getMarkdownContent(section.source) : ''
           };
-        case 'publications': {
-          const bibtex = getBibtexContent('publications.bib');
-          const allPubs = parseBibTeX(bibtex);
-          const filteredPubs = section.filter === 'selected'
-            ? allPubs.filter(p => p.selected)
-            : allPubs;
+        case 'education': {
+          const educationData = section.source ? getTomlContent<{ education: EducationItem[] }>(section.source) : null;
           return {
             ...section,
-            publications: filteredPubs.slice(0, section.limit || 5)
-          };
-        }
-        case 'list': {
-          const newsData = section.source ? getTomlContent<{ news: NewsItem[] }>(section.source) : null;
-          return {
-            ...section,
-            items: newsData?.news || []
+            education: educationData?.education || []
           };
         }
         default:
@@ -113,6 +100,12 @@ export default function Home() {
             id: item.target,
             config: pageConfig as CardPageConfig
           } as PageData;
+        } else if (pageConfig.type === 'pdf') {
+          return {
+            type: 'pdf',
+            id: item.target,
+            config: pageConfig as PdfPageConfig
+          } as PageData;
         }
         return null;
       })
@@ -128,24 +121,23 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
+    <div className="max-w-6xl mx-auto min-h-screen px-4 py-10 sm:px-6 lg:px-8 lg:py-12 xl:py-14">
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-14 xl:gap-16">
 
         {/* Left Column - Profile */}
-        <div className="lg:col-span-1">
+        <div className="self-start lg:sticky lg:top-28 lg:col-span-4">
           <Profile
             author={config.author}
             social={config.social}
-            features={config.features}
             researchInterests={researchInterests}
           />
         </div>
 
         {/* Right Column - Content */}
-        <div className="lg:col-span-2 space-y-8">
+        <div className="space-y-14 pb-4 lg:col-span-8 lg:pb-12">
           {pagesToShow.map((page) => (
-            <section key={page.id} id={page.id} className="scroll-mt-24 space-y-8">
+            <section key={page.id} id={page.id} className="scroll-mt-24 space-y-12 sm:space-y-14">
               {page.type === 'about' && page.sections.map((section: SectionConfig) => {
                 switch (section.type) {
                   case 'markdown':
@@ -156,21 +148,12 @@ export default function Home() {
                         title={section.title}
                       />
                     );
-                  case 'publications':
+                  case 'education':
                     return (
-                      <SelectedPublications
+                      <Education
                         key={section.id}
-                        publications={section.publications || []}
                         title={section.title}
-                        enableOnePageMode={true}
-                      />
-                    );
-                  case 'list':
-                    return (
-                      <News
-                        key={section.id}
-                        items={section.items || []}
-                        title={section.title}
+                        items={section.education || []}
                       />
                     );
                   default:
@@ -197,6 +180,12 @@ export default function Home() {
                   embedded={true}
                 />
               )}
+              {page.type === 'pdf' && (
+                <PdfPage
+                  config={page.config}
+                  embedded={true}
+                />
+              )}
             </section>
           ))}
         </div>
@@ -204,4 +193,3 @@ export default function Home() {
     </div>
   );
 }
-

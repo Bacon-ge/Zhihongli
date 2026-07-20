@@ -1,4 +1,42 @@
-type = "publication"
-title = "Publications"
-description = "A collection of my research work."
-source = "publications.bib"
+type = "research"
+title = "Research"
+
+[[publications]]
+number = 1
+authors = "Zou, W., Qu, J. G., Yi, J., & Li, Z."
+year = 2026
+title = "Addressing \"Political Anger\" and \"Non-Political Fear\" in News Engagement: The Impact of Human-AI Interactions on Emotional and Behavioral Responses"
+venue = "Mass Communication and Society"
+details = "1-21"
+
+[[conference_presentations]]
+number = 4
+authors = "Qin, X., Li, Z., & Cheng, X."
+year = 2026
+title = "Restoring Heterogeneity in LLM Social Simulation: An Audience Segmentation Approach"
+venue = "Annual Conference of the International Communication Association (ICA), Computational Methods Division"
+location = "Cape Town, South Africa"
+
+[[conference_presentations]]
+number = 3
+authors = "Li, Z."
+year = 2026
+title = "\"Only a Method of Getting to Know Someone\": Gay University Students, Heteronormativity, and the Mediatization of Love on Chinese Dating Apps"
+venue = "Annual Conference of the International Communication Association (ICA), Lesbian, Gay, Bisexual, Transgender and Queer Studies Division"
+location = "Cape Town, South Africa"
+
+[[conference_presentations]]
+number = 2
+authors = "Li, Z."
+year = 2026
+title = "Feeling the Collapse: Fandom Meltdowns as Reactive Collective Action in the Digital Movement Society"
+venue = "Annual Conference of the International Communication Association (ICA), Popular Media and Culture Division"
+location = "Cape Town, South Africa"
+
+[[conference_presentations]]
+number = 1
+authors = "Zou, W., Qu, J. G., Yi, J., & Li, Z."
+year = 2025
+title = "Addressing \"Political Anger\" and \"Non-Political Fear\" in News Engagement: The Impact of Human-AI Interactions on Emotional and Behavioral Responses"
+venue = "Annual Conference of the Association for Education in Journalism and Mass Communication (AEJMC), Political Communication Division"
+location = "San Francisco, CA, United States"
