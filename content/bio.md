@@ -1,11 +1,9 @@
 Hi, I am Zhihong, an incoming M.A. student in Sociology at the University of Oxford.
 
-My research begins with puzzles that arise from everyday life. I often find myself wondering why people express themselves on social media in ways that feel intensely emotional, loosely reasoned, or simply noisy: why conversations escalate, why certainty hardens so quickly, and why so much of it seems to move without clear logic.
+My research examines how social differences are organized through digital public communication — in fandom, gender politics, and political conflict. I am also interested in using emerging computational tools to simulate and represent these differences. This inquiry grows from a sustained interest in lived experiences across social positions.
 
-Beneath these surface impressions is a larger question that keeps pulling me back: why are they different from me? Those differences do more than frustrate or confuse me. They locate me socially, emotionally, and intellectually by revealing what I take for granted and what others do not. And it is precisely this gap that fuels my curiosity.
+Much of this curiosity comes from encountering people whose lives look nothing like mine, through fieldwork, volunteer counseling, and the ordinary surprise of discovering how differently others see the world.
 
-So you may notice that the areas I have been working on recently look wildly different: romantic relationships, fandom and affective publics, feminism in China, and more. But none of these topics are arbitrary to me. They come from the most real, persistent questions in my everyday life.
-
-As I write and research, I am still tracing the deeper theme that connects them and figuring out the field where I truly want to plant my feet, so I keep trying.
+Also, I am drawn to the contentious corners of digital life, where emotions run high and positions harden fast. These spaces reveal how digital communication shapes which differences come to define public debate and which remain invisible.
 
 By the way, I really, really want to raise a Shiba Inu.

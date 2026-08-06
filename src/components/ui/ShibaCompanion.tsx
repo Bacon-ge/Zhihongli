@@ -55,7 +55,7 @@ export default function ShibaCompanion() {
         };
     }, []);
 
-    const petLuncheonMeat = () => {
+    const petLuncheon = () => {
         const nextPose = actionCycle[reactionIndex.current % actionCycle.length];
         reactionIndex.current += 1;
 
@@ -79,8 +79,8 @@ export default function ShibaCompanion() {
                 type="button"
                 onClick={() => setIsHidden(false)}
                 className="shiba-return ui-pressable"
-                aria-label="Bring Luncheon meat back"
-                title="Bring Luncheon meat back"
+                aria-label="Bring Luncheon back"
+                title="Bring Luncheon back"
             >
                 <span aria-hidden="true">🐾</span>
             </button>
@@ -94,7 +94,7 @@ export default function ShibaCompanion() {
             initial={{ opacity: 0, transform: shouldReduceMotion ? 'none' : 'translateY(12px) scale(0.96)' }}
             animate={{ opacity: 1, transform: 'translateY(0) scale(1)' }}
             transition={{ duration: shouldReduceMotion ? 0.12 : 0.32, ease: [0.23, 1, 0.32, 1] }}
-            aria-label="Luncheon meat, a virtual Shiba Inu companion"
+            aria-label="Luncheon, a virtual Shiba Inu companion"
         >
             <AnimatePresence>
                 {(barkText || isHovered) && (
@@ -105,7 +105,7 @@ export default function ShibaCompanion() {
                         exit={{ opacity: 0, transform: shouldReduceMotion ? 'none' : 'translateY(3px) scale(0.98)' }}
                         transition={{ duration: shouldReduceMotion ? 0.1 : 0.18, ease: [0.23, 1, 0.32, 1] }}
                     >
-                        <span>{barkText || 'Pet Luncheon meat'}</span>
+                        <span>{barkText || 'Pet Luncheon'}</span>
                         {!barkText && <span className="shiba-message__hint">tap for a new pose</span>}
                     </motion.div>
                 )}
@@ -115,22 +115,22 @@ export default function ShibaCompanion() {
                 type="button"
                 onClick={() => setIsHidden(true)}
                 className="shiba-close ui-pressable"
-                aria-label="Hide Luncheon meat"
-                title="Hide Luncheon meat"
+                aria-label="Hide Luncheon"
+                title="Hide Luncheon"
             >
                 <XMarkIcon className="h-3.5 w-3.5" aria-hidden="true" />
             </button>
 
             <button
                 type="button"
-                onClick={petLuncheonMeat}
+                onClick={petLuncheon}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 onFocus={() => setIsHovered(true)}
                 onBlur={() => setIsHovered(false)}
                 className={cn('shiba-pet', isHappy && 'shiba-pet--happy')}
-                aria-label="Pet Luncheon meat the Shiba Inu"
-                title="Pet Luncheon meat"
+                aria-label="Pet Luncheon the Shiba Inu"
+                title="Pet Luncheon"
             >
                 <AnimatePresence mode="wait" initial={false}>
                     <motion.div

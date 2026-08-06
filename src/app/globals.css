@@ -514,7 +514,7 @@ a {
   }
 }
 
-/* Luncheon meat, the unobtrusive virtual Shiba Inu companion. */
+/* Luncheon, the unobtrusive virtual Shiba Inu companion. */
 .shiba-companion {
   position: fixed;
   right: max(0.85rem, env(safe-area-inset-right));
