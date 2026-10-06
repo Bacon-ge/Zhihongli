@@ -1,12 +1,12 @@
 [site]
 title = "Zhihong Li Academic Homepage"
-description = "Incoming Master Student at the University of Oxford."
+description = "Master Student at the University of Oxford."
 favicon = "/favicon-bacon.svg"
 last_updated = "July 19, 2026"
 
 [author]
 name = "Zhihong Li"
-title = "Incoming Master Student"
+title = "Master Student"
 institution = "The University of Oxford"
 avatar = "/bio.jpg"
 

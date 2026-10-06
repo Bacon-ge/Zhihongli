@@ -1,4 +1,4 @@
-Hi, I am Zhihong, an incoming M.A. student in Sociology at the University of Oxford.
+Hi, I am Zhihong, a master's student in Sociology at the University of Oxford.
 
 My research examines how social differences are organized through digital public communication — in fandom, gender politics, and political conflict. I am also interested in using emerging computational tools to simulate and represent these differences. This inquiry grows from a sustained interest in lived experiences across social positions.
 
