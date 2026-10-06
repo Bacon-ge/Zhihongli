@@ -8,7 +8,11 @@ interface PdfPageProps {
 }
 
 export default function PdfPage({ config, embedded = false }: PdfPageProps) {
-    const pdfUrl = withBasePath(config.source);
+    const sourceUrl = withBasePath(config.source);
+    const version = config.version ?? config.updated;
+    const pdfUrl = version
+        ? `${sourceUrl}${sourceUrl.includes('?') ? '&' : '?'}v=${encodeURIComponent(version)}`
+        : sourceUrl;
     const viewerUrl = `${pdfUrl}#view=FitH&toolbar=1&navpanes=0`;
 
     return (

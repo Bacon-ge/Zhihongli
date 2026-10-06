@@ -34,6 +34,7 @@ export interface PdfPageConfig extends BasePageConfig {
     type: 'pdf';
     source: string;
     updated?: string;
+    version?: string;
 }
 
 export interface CardItem {
