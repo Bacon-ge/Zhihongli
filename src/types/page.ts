@@ -12,6 +12,7 @@ export interface ResearchEntry {
     venue: string;
     details?: string;
     location?: string;
+    doi?: string;
 }
 
 export interface ResearchPageConfig extends BasePageConfig {

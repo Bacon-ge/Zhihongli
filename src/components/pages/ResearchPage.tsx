@@ -62,6 +62,20 @@ function ResearchSection({ title, entries, presentation = false }: ResearchSecti
                                 <em className="font-medium text-neutral-800">{entry.venue}</em>
                                 {entry.details ? `, ${entry.details}` : ''}
                                 {entry.location ? `, ${entry.location}` : ''}.
+                                {entry.doi && (
+                                    <>
+                                        {' '}
+                                        <a
+                                            href={`https://doi.org/${entry.doi}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="break-all text-accent underline decoration-accent/35 underline-offset-4 hover:text-accent-dark"
+                                        >
+                                            {`https://doi.org/${entry.doi}`}
+                                        </a>
+                                        .
+                                    </>
+                                )}
                             </p>
                         </div>
                     </motion.article>

@@ -2,12 +2,22 @@ type = "research"
 title = "Research"
 
 [[publications]]
+number = 2
+authors = "Li, Z."
+year = 2026
+title = "Fandom Rupture in the Movement Society: Reactive Collective Participation Through Affective Practices"
+venue = "Social Media + Society"
+details = "12(4)"
+doi = "10.1177/20563051261502656"
+
+[[publications]]
 number = 1
 authors = "Zou, W., Qu, J. G., Yi, J., & Li, Z."
 year = 2026
 title = "Addressing \"Political Anger\" and \"Non-Political Fear\" in News Engagement: The Impact of Human-AI Interactions on Emotional and Behavioral Responses"
 venue = "Mass Communication and Society"
 details = "1-21"
+doi = "10.1080/15205436.2026.2687866"
 
 [[conference_presentations]]
 number = 4
