@@ -19,3 +19,12 @@
 .blog-zoom-product{position:relative;overflow:hidden;width:min(800px,90vw,98.46vh);aspect-ratio:800/650}.blog-lightbox .blog-zoom-product img{position:absolute;top:-23.076923%;left:0;width:100%;height:auto;max-height:none;max-width:none}
 
 .blog-prose .product .image-button::after,.blog-zoom-product::after{content:"";position:absolute;top:0;left:30%;right:0;height:8%;background:white;pointer-events:none}
+
+@font-face{font-family:DazzlingSong;src:url('../../../public/blog-assets/2026-11-21/NotoSerifSC.woff2') format('woff2');font-weight:100 900;font-display:swap}
+.blog-entry+.blog-entry{border-top:0}
+.blog-article-dazzling{--blog-font:'Times New Roman',DazzlingSong,'Noto Serif SC','Source Han Serif SC',serif;background:#fdfbf7;color:var(--blog-ink)}
+.blog-article-dazzling .blog-masthead h1{line-height:1.25;text-wrap:initial;letter-spacing:-.02em}
+.blog-article-dazzling .blog-cover img{object-position:center}
+.blog-article-dazzling .blog-prose p{text-align:justify}
+.blog-article-dazzling .blog-prose .artwork{margin:34px 0}
+@media(max-width:760px){.blog-article-dazzling .blog-masthead h1{font-size:32px}.blog-article-dazzling .blog-prose .artwork{margin:28px 0}}
